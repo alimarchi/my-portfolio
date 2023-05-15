@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <header>
       <div className="mobile-header">
-        <nav className="mobile-nav">
+        <nav className="general-nav">
           <div>
             <FontAwesomeIcon
               icon={faLinkedin}
@@ -64,6 +64,39 @@ const Header = () => {
             </ul>
           </div>
         )}
+      </div>
+      <div className="desktop-header container">
+        <nav className="general-nav">
+          <div>
+            <FontAwesomeIcon
+              icon={faLinkedin}
+              size="2x"
+              className="social-logo"
+            />
+            <FontAwesomeIcon
+              icon={faGithub}
+              size="2x"
+              className="social-logo"
+            />
+          </div>
+          <ul className="menu-links">
+              <li>
+                <a>Home</a>
+              </li>
+              <li>
+                <a>Projects</a>
+              </li>
+              <li>
+                <a>About Me</a>
+              </li>
+              <li>
+                <a>Skills</a>
+              </li>
+              <li>
+                <a>Contact</a>
+              </li>
+            </ul>
+        </nav>
       </div>
     </header>
   );

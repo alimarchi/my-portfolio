@@ -1,41 +1,126 @@
-.mobile-header {
-    display: block;
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: var(--white);
+  box-shadow: 0 -1px 4px #00000026;
+  height: auto;
 }
 
-.mobile-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1em;
+.mobile-header {
+  display: block;
+}
+
+.desktop-header {
+  display: none;
+}
+
+.general-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
 }
 
 .social-logo:first-of-type {
-    margin-right: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .social-logo:hover {
-    color: var(--purple);
+  color: var(--purple);
 }
 
 .menu-logo {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .dropdown-menu {
-    background-color: #9ba4b524;
-    text-align: right;
-    padding: .5em 1em;
-    border-bottom: 1px solid var(--black);
+  background-color: var(--white);
+  text-align: right;
+  padding: 0.5em 1em;
+  border-bottom: 1px solid var(--black);
+  animation: growDown 300ms ease-in-out forwards;
+  transform-origin: top center;
+  display: block;
+  z-index: 999;
+  position: absolute;
+  overflow: visible;
+  right: 0;
+  left: 0;
 }
 
 .dropdown-menu a {
-    font-size: 1.1rem;
+  font-size: 1.1rem;
 }
 
 .dropdown-menu li:not(:last-of-type) {
-    margin-bottom: .3rem;
+  margin-bottom: 0.3rem;
 }
 
-.dropdown-menu li:hover:active {
-    color: var(--purple);
+.dropdown-menu li {
+  cursor: pointer;
+}
+
+.dropdown-menu li:hover,
+.dropdown-menu li:active {
+  color: var(--purple);
+}
+
+.menu-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-links li:not(:last-of-type) {
+  margin-right: 2em;
+}
+
+.menu-links li {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.menu-links li:hover {
+  color: var(--purple);
+  border-bottom: 1px solid var(--purple);
+}
+
+@keyframes growDown {
+  0% {
+    transform: scaleY(0);
+  }
+  80% {
+    transform: scaleY(1.1);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+/* Tablet devices */
+@media (min-width: 576px) {
+}
+
+/* Laptop devices */
+@media (min-width: 768px) {
+  .mobile-header {
+    display: none;
+  }
+
+  .desktop-header {
+    display: block;
+  }
+}
+/* Desktop */
+@media (min-width: 992px) {
+}
+/* Large devices */
+@media (min-width: 1200px) {
+}
+
+/* XXL devices */
+@media (min-width: 1400px) {
 }
