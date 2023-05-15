@@ -1,0 +1,41 @@
+.mobile-header {
+    display: block;
+}
+
+.mobile-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.social-logo:first-of-type {
+    margin-right: 0.5rem;
+}
+
+.social-logo:hover {
+    color: var(--purple);
+}
+
+.menu-logo {
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    background-color: #9ba4b524;
+    text-align: right;
+    padding: .5em 1em;
+    border-bottom: 1px solid var(--black);
+}
+
+.dropdown-menu a {
+    font-size: 1.1rem;
+}
+
+.dropdown-menu li:not(:last-of-type) {
+    margin-bottom: .3rem;
+}
+
+.dropdown-menu li:hover:active {
+    color: var(--purple);
+}
