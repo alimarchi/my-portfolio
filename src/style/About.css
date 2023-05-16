@@ -1,6 +1,45 @@
+.experience-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+  margin-bottom: 3em;
+}
+
+.experience-title h4:first-of-type {
+  margin-right: 1.5em;
+}
+
+.experience-title h4 {
+  cursor: pointer;
+}
+
+.experience-title h4:hover {
+  color: var(--purple);
+}
+
 .about-main-container {
-    background-color: var(--purple);
-    margin-top: 3em;
-    padding: 2em;
-    border-radius: 1rem;
+  background-color: var(--purple);
+  padding: 2em;
+  border-radius: 1rem;
+  margin: 3em 1em 0 1em;
+}
+
+.cv-button {
+  color: var(--white);
+  background-color: var(--black);
+  padding: 0.8em 2em;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 1.3rem;
+  margin-top: 2em;
+}
+
+.cv-button:hover {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.cv-logo {
+  margin-left: 0.5em;
 }

@@ -1,4 +1,13 @@
 import "../style/About.css";
+import mypicture from "../assets/Alice_PNG.png";
+import mypicture2 from "../assets/alice1.jpg";
+import Education from "./Education";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFileLines,
+  faGraduationCap,
+  faBriefcase,
+} from "@fortawesome/free-solid-svg-icons";
 
 function About() {
   return (
@@ -9,9 +18,6 @@ function About() {
           <h2 className="section-title">About Me</h2>
         </div>
         <div className="about-main-container">
-            <div className="about-img-container">
-
-            </div>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
             efficitur convallis malesuada. Maecenas vitae pellentesque urna, vel
@@ -39,7 +45,20 @@ function About() {
             tortor. Nulla facilisi. Donec at odio in enim malesuada ornare a et
             magna. Nam fringilla bibendum lectus non laoreet.
           </p>
+          <button className="cv-button">
+            Download CV
+            <FontAwesomeIcon icon={faFileLines} className="cv-logo" />
+          </button>
         </div>
+        <div className="experience-title">
+          <h4>
+            <FontAwesomeIcon icon={faGraduationCap} /> Education
+          </h4>
+          <h4>
+            <FontAwesomeIcon icon={faBriefcase} /> Experience
+          </h4>
+        </div>
+        <Education />
       </div>
     </section>
   );
