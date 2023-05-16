@@ -55,7 +55,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 
 h5 {
@@ -85,9 +85,30 @@ img {
   height: auto;
 }
 
+/* general classes */
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.main-section {
+  margin-top: 4em;
+}
+
+.section-header {
+  margin: 0 1em;
+}
+
+.divider {
+  width: 42px;
+  height: 4px;
+  border-radius: 0.3rem;
+  background: var(--black);
+}
+
+.section-title {
+  margin-top: 0.5em;
 }
 
 /* Tablet devices */

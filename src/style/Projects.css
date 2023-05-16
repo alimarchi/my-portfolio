@@ -1,0 +1,11 @@
+.projects-container {
+    padding: 0 1em;
+    margin-top: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 3em;
+    column-gap: 2em;
+}
+

@@ -17,10 +17,27 @@
   font-size: 1.1rem;
   font-weight: 600;
   border-radius: 1.3rem;
-  margin-left: 1em;
   margin-top: 2em;
 }
 
 .action-button:hover {
   background-color: var(--purple);
+}
+
+/* Tablet devices */
+@media (min-width: 576px) {
+}
+
+/* Laptop devices */
+@media (min-width: 768px) {
+}
+/* Desktop */
+@media (min-width: 992px) {
+}
+/* Large devices */
+@media (min-width: 1200px) {
+}
+
+/* XXL devices */
+@media (min-width: 1400px) {
 }

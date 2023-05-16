@@ -1,0 +1,6 @@
+.about-main-container {
+    background-color: var(--purple);
+    margin-top: 3em;
+    padding: 2em;
+    border-radius: 1rem;
+}

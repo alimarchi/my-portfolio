@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "Wordle",
+    "type": "Personal project",
+    "tech": " React - JavaScript - CSS",
+    "img": "https://randomwordgenerator.com/img/picture-generator/53e0d6424355ab14f1dc8460962e33791c3ad6e04e507440762d7fd59449c3_640.jpg",
+    "repoURL": "#",
+    "webURL": "#"
+  },
+  {
+    "id": 2,
+    "name": "Shopping Cart",
+    "type": "Personal project",
+    "tech": " React - JavaScript - CSS",
+    "img": "https://randomwordgenerator.com/img/picture-generator/55e9dd4b4a57a414f1dc8460962e33791c3ad6e04e507440762e79d7944ecd_640.jpg",
+    "repoURL": "#",
+    "webURL": "#"
+  },
+  {
+    "id": 3,
+    "name": "Weather App",
+    "type": "Personal project",
+    "tech": " React - JavaScript - CSS",
+    "img": "https://randomwordgenerator.com/img/picture-generator/g3ad98e78837ebd6a7150c212a5cfa2852dc5984b647d85aa4b22066f19cbc024a1b00844b35825caf68ce40ed96c057d_640.jpg",
+    "repoURL": "#",
+    "webURL": "#"
+  },
+  {
+    "id": 4,
+    "name": "Movies Watchlist",
+    "type": "Personal project",
+    "tech": " React - JavaScript - CSS",
+    "img": "https://randomwordgenerator.com/img/picture-generator/57e5dc464256ab14f1dc8460962e33791c3ad6e04e50744172287ed39f48c0_640.jpg",
+    "repoURL": "#",
+    "webURL": "#"
+  },
+  {
+    "id": 5,
+    "name": "myCRYPTO",
+    "type": "Personal project",
+    "tech": "Python - Flask - HTML5",
+    "img": "https://randomwordgenerator.com/img/picture-generator/pocket-watch-3156771_640.jpg",
+    "repoURL": "#",
+    "webURL": "#"
+  }
+]

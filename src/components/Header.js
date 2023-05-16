@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../../style/Header.css";
+import "../style/Header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
