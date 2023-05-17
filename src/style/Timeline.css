@@ -1,0 +1,36 @@
+.timeline-data {
+  margin-left: 1em;
+  margin-right: 1em;
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  column-gap: 1.5em;
+}
+
+.circle {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-color: var(--black);
+  border-radius: 50%;
+}
+
+.line {
+  display: block;
+  width: 2px;
+  height: 100%;
+  background-color: var(--black);
+  transform: translate(6px, -7px);
+}
+
+.left-item {
+  text-align: right;
+}
+
+.date {
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+}
+
+.company-name {
+  margin-top: 0.3em;
+}

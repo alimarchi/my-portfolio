@@ -8,6 +8,7 @@ import {
   faGraduationCap,
   faBriefcase,
 } from "@fortawesome/free-solid-svg-icons";
+import Experience from "./Experience";
 
 function About() {
   return (
@@ -58,7 +59,8 @@ function About() {
             <FontAwesomeIcon icon={faBriefcase} /> Experience
           </h4>
         </div>
-        <Education />
+        {/* <Education /> */}
+        <Experience />
       </div>
     </section>
   );
