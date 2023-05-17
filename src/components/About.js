@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "../style/About.css";
 import mypicture from "../assets/Alice_PNG.png";
 import mypicture2 from "../assets/alice1.jpg";
@@ -11,6 +12,23 @@ import {
 import Experience from "./Experience";
 
 function About() {
+  const [educationOn, setEducationOn] = useState(true);
+  const [experienceOn, setExperienceOn] = useState(false);
+
+  const handleEducation = () => {
+    if (!educationOn) {
+      setEducationOn(true);
+      setExperienceOn(false);
+    }
+  };
+
+  const handleExperience = () => {
+    if (!experienceOn) {
+      setExperienceOn(true);
+      setEducationOn(false);
+    }
+  };
+
   return (
     <section className="main-section">
       <div className="container">
@@ -52,15 +70,15 @@ function About() {
           </button>
         </div>
         <div className="experience-title">
-          <h4>
+          <h4 onClick={handleEducation} className={educationOn ? "selected" : ""}>
             <FontAwesomeIcon icon={faGraduationCap} /> Education
           </h4>
-          <h4>
+          <h4 onClick={handleExperience} className={experienceOn ? "selected" : ""}>
             <FontAwesomeIcon icon={faBriefcase} /> Experience
           </h4>
         </div>
-        {/* <Education /> */}
-        <Experience />
+        {educationOn && <Education />}
+        {experienceOn && <Experience />}
       </div>
     </section>
   );

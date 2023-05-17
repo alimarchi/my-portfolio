@@ -1,0 +1,123 @@
+.contact-container {
+  margin-top: 2.5em;
+  margin-bottom: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2.5em;
+}
+
+.contact-form, .contact-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact-form form {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.input-container {
+  position: relative;
+  margin-top: 1.5em;
+}
+
+.contact-form input {
+  padding: 1em;
+  border: 2px solid var(--black);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  background-color: var(--white);
+  width: 300px;
+}
+
+.contact-form textarea {
+  padding: 1em;
+  border: 2px solid var(--black);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  background-color: var(--white);
+  width: 300px;
+  height: 190px;
+}
+
+.contact-form label {
+  position: absolute;
+  top: -7px;
+  left: 15px;
+  background-color: var(--white);
+  padding: 0 0.2em;
+}
+
+.contact-button-container {
+  margin: 0 auto;
+}
+
+.contact-button {
+  color: var(--white);
+  background-color: var(--black);
+  padding: 0.8em 2em;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 1.3rem;
+  margin-top: 2em;
+}
+
+.contact-button:hover {
+  background-color: var(--purple);
+}
+
+.contact-logo {
+  margin-left: 0.5em;
+}
+
+.contact-card {
+  border: 1px solid var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: .2em;
+  padding: .8em 0;
+  border-radius: .5rem;
+  width: 250px;
+  margin-top: .8em;
+}
+
+.contact-card:first-of-type {
+    margin-top: 1.2em;
+}
+
+/* Tablet devices */
+@media (min-width: 576px) {
+  .contact-container {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 0;
+  }
+}
+/* Laptop devices */
+@media (min-width: 768px) {
+}
+/* Desktop */
+@media (min-width: 992px) {
+}
+/* Large devices */
+@media (min-width: 1200px) {
+  .contact-form input {
+    width: 350px;
+  }
+
+  .contact-form textarea {
+    width: 350px;
+  }
+}
+/* XXL devices */
+@media (min-width: 1400px) {
+}

@@ -1,0 +1,40 @@
+.skills-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2em;
+    padding: 0 1em;
+}
+
+.skills-container {
+    margin-top: 2.5em;
+}
+
+.skills-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5em;
+}
+
+.skills-single-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.skills-single-item i {
+    font-size: 2.5rem;
+}
+
+/* Large devices */
+@media (min-width: 1200px) {
+    .skills-container {
+        flex-direction: row;
+    }
+}

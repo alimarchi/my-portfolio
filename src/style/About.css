@@ -12,10 +12,21 @@
 
 .experience-title h4 {
   cursor: pointer;
+  border: 1px solid var(--black);
+  padding: .5em 1.2em;
+  border-radius: 1.3rem;
 }
 
-.experience-title h4:hover {
+.experience-title h4:not(.selected):hover {
   color: var(--purple);
+  border: 1px solid var(--purple);
+  background-color: var(--white);
+}
+
+.selected {
+  color: var(--white);
+  background-color: var(--black);
+  cursor: default !important;
 }
 
 .about-main-container {
