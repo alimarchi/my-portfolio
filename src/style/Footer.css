@@ -1,0 +1,16 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid var(--black);
+  padding: 1.5em;
+}
+
+.footer-text {
+    text-align: center;
+}
+
+.heart {
+  color: var(--purple);
+  font-size: 1.5rem;
+}
