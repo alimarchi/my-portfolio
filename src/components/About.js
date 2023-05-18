@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "../style/About.css";
-import mypicture from "../assets/Alice_PNG.png";
+import mypicture from "../assets/Alice2.png";
 import mypicture2 from "../assets/alice1.jpg";
 import Education from "./Education";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -8,6 +8,9 @@ import {
   faFileLines,
   faGraduationCap,
   faBriefcase,
+  faGlobe,
+  faLaptopCode,
+  faSquarePollVertical,
 } from "@fortawesome/free-solid-svg-icons";
 import Experience from "./Experience";
 
@@ -37,43 +40,72 @@ function About() {
           <h2 className="section-title">About Me</h2>
         </div>
         <div className="about-main-container">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-            efficitur convallis malesuada. Maecenas vitae pellentesque urna, vel
-            egestas justo. Nunc elementum tincidunt est eu sagittis. Donec
-            egestas ex in sapien posuere ornare. Mauris tempus, diam in
-            sollicitudin bibendum, tortor arcu efficitur nibh, nec pellentesque
-            massa urna ac dui. Nulla nec arcu at nunc finibus varius et quis
-            urna. Vivamus finibus dignissim magna, vitae condimentum massa
-            ullamcorper id. Vestibulum vel nibh quis metus convallis blandit.
-            Quisque nisi ligula, fringilla vitae elementum vel, dignissim
-            imperdiet massa. Donec ac sodales nibh. Ut fermentum placerat sem
-            eget fringilla. Donec malesuada nisi ut arcu porta, eget lacinia
-            justo tempus. Aliquam bibendum tellus rutrum fermentum suscipit. In
-            id arcu et libero iaculis gravida ac sed tortor. Fusce elit dui,
-            cursus sed vestibulum sit amet, ullamcorper non libero. Ut lacus
-            massa, varius nec ipsum dignissim, lobortis aliquam leo. Morbi
-            commodo pharetra nisi ut ornare. In hac habitasse platea dictumst.
-            In et odio et sapien rhoncus pretium. Duis sed feugiat nulla.
-            Maecenas rhoncus vehicula lacus quis efficitur. Nunc vulputate
-            porttitor justo, sit amet ultricies libero efficitur vel. Praesent
-            malesuada neque nec dignissim auctor. Proin suscipit iaculis odio
-            sed hendrerit. Vestibulum leo leo, rutrum a ullamcorper vel, luctus
-            ac tellus. Morbi interdum metus ut augue mattis, eu posuere est
-            ultricies. Duis dui ligula, semper et commodo a, fermentum in
-            tortor. Nulla facilisi. Donec at odio in enim malesuada ornare a et
-            magna. Nam fringilla bibendum lectus non laoreet.
-          </p>
-          <button className="cv-button">
-            Download CV
-            <FontAwesomeIcon icon={faFileLines} className="cv-logo" />
-          </button>
+          <div className="about-photo-container">
+            <div className="my-photo-container">
+              <img src={mypicture} />
+            </div>
+          </div>
+          <div className="about-info-container">
+            <div>
+              <FontAwesomeIcon icon={faGlobe} size="2x" />
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+              efficitur convallis malesuada. Maecenas vitae pellentesque urna,
+              vel egestas justo. Nunc elementum tincidunt est eu sagittis. Donec
+              egestas ex in sapien posuere ornare. Mauris tempus, diam in
+              sollicitudin bibendum, tortor arcu efficitur nibh, nec
+              pellentesque massa urna ac dui. Nulla nec arcu at nunc finibus
+              varius et quis urna. Vivamus finibus dignissim magna, vitae
+              condimentum massa ullamcorper id. Vestibulum vel nibh quis metus
+              convallis blandit.
+            </p>
+            <div>
+              <FontAwesomeIcon icon={faSquarePollVertical} size="2x" />
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+              efficitur convallis malesuada. Maecenas vitae pellentesque urna,
+              vel egestas justo. Nunc elementum tincidunt est eu sagittis. Donec
+              egestas ex in sapien posuere ornare. Mauris tempus, diam in
+              sollicitudin bibendum, tortor arcu efficitur nibh, nec
+              pellentesque massa urna ac dui. Nulla nec arcu at nunc finibus
+              varius et quis urna. Vivamus finibus dignissim magna, vitae
+              condimentum massa ullamcorper id. Vestibulum vel nibh quis metus
+              convallis blandit.
+            </p>
+            <div>
+              <FontAwesomeIcon icon={faLaptopCode} size="2x" />
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+              efficitur convallis malesuada. Maecenas vitae pellentesque urna,
+              vel egestas justo. Nunc elementum tincidunt est eu sagittis. Donec
+              egestas ex in sapien posuere ornare. Mauris tempus, diam in
+              sollicitudin bibendum, tortor arcu efficitur nibh, nec
+              pellentesque massa urna ac dui. Nulla nec arcu at nunc finibus
+              varius et quis urna. Vivamus finibus dignissim magna, vitae
+              condimentum massa ullamcorper id. Vestibulum vel nibh quis metus
+              convallis blandit.
+            </p>
+
+            <button className="cv-button">
+              Download CV
+              <FontAwesomeIcon icon={faFileLines} className="cv-logo" />
+            </button>
+          </div>
         </div>
         <div className="experience-title">
-          <h4 onClick={handleEducation} className={educationOn ? "selected" : ""}>
+          <h4
+            onClick={handleEducation}
+            className={educationOn ? "selected" : ""}
+          >
             <FontAwesomeIcon icon={faGraduationCap} /> Education
           </h4>
-          <h4 onClick={handleExperience} className={experienceOn ? "selected" : ""}>
+          <h4
+            onClick={handleExperience}
+            className={experienceOn ? "selected" : ""}
+          >
             <FontAwesomeIcon icon={faBriefcase} /> Experience
           </h4>
         </div>

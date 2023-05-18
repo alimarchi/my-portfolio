@@ -1,0 +1,17 @@
+.arrow-container {
+  background-color: var(--purple);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  padding: 0.5em;
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(155, 164, 181, 1);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(155, 164, 181, 1);
+  box-shadow: 5px 5px 5px 0px rgba(155, 164, 181, 1);
+  z-index: 999;
+  position:fixed;
+  bottom: 110px;
+  right: 20px;
+  cursor: pointer;
+}
