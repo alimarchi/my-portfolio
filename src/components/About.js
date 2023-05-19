@@ -1,7 +1,6 @@
 import { useState } from "react";
 import "../style/About.css";
 import mypicture from "../assets/Alice2.png";
-import mypicture2 from "../assets/alice1.jpg";
 import Education from "./Education";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
