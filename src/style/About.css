@@ -39,6 +39,9 @@
   align-items: center;
   flex-direction: column;
   gap: 2.5em;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(155, 164, 181, 1);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(155, 164, 181, 1);
+  box-shadow: 10px 10px 5px 0px rgba(155, 164, 181, 1);
 }
 
 .my-photo-container {
