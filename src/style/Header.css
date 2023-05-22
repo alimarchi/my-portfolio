@@ -32,6 +32,10 @@ header {
   color: var(--purple);
 }
 
+.header-link {
+  color: var(--black);
+}
+
 .menu-logo {
   cursor: pointer;
 }
@@ -53,6 +57,7 @@ header {
 
 .dropdown-menu a {
   font-size: 1.1rem;
+  color: var(--black);
 }
 
 .dropdown-menu li:not(:last-of-type) {
@@ -63,8 +68,8 @@ header {
   cursor: pointer;
 }
 
-.dropdown-menu li:hover,
-.dropdown-menu li:active {
+.dropdown-menu a:hover,
+.dropdown-menu a:active {
   color: var(--purple);
 }
 
@@ -72,6 +77,10 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.menu-links a {
+  color: var(--black);
 }
 
 .menu-links li:not(:last-of-type) {
@@ -83,7 +92,8 @@ header {
   cursor: pointer;
 }
 
-.menu-links li:hover {
+.menu-links a:hover,
+.menu-links a:active {
   color: var(--purple);
   border-bottom: 1px solid var(--purple);
 }

@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDesktop } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
-const Card = ({project}) => {
+const Card = ({ project }) => {
   return (
     <article className="project-card">
       <div className="img-container">
@@ -14,8 +14,16 @@ const Card = ({project}) => {
         <p>{project.tech}</p>
       </div>
       <div className="project-logos">
-        <FontAwesomeIcon icon={faGithub} size="xl" className="project-logo" />
-        <FontAwesomeIcon icon={faDesktop} size="xl" className="project-logo" />
+        <a href={project.repoURL}>
+          <FontAwesomeIcon icon={faGithub} size="xl" className="project-logo" />
+        </a>
+        <a href={project.webURL}>
+          <FontAwesomeIcon
+            icon={faDesktop}
+            size="xl"
+            className="project-logo"
+          />
+        </a>
       </div>
     </article>
   );

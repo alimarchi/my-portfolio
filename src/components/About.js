@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "../style/About.css";
-import mypicture from "../assets/Alice2.png";
+import mypicture from "../assets/About_photo.png";
+import CV from "../assets/CV_Alice_Marchi.pdf";
 import Education from "./Education";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -32,7 +33,7 @@ function About() {
   };
 
   return (
-    <section className="main-section">
+    <section className="main-section" id="about">
       <div className="container">
         <div className="section-header">
           <div className="divider"></div>
@@ -89,8 +90,10 @@ function About() {
             </p>
 
             <button className="cv-button">
-              Download CV
-              <FontAwesomeIcon icon={faFileLines} className="cv-logo" />
+              <a download="CV_AliceMarchi.pdf" href={CV}>
+                Download CV
+                <FontAwesomeIcon icon={faFileLines} className="cv-logo" />
+              </a>
             </button>
           </div>
         </div>

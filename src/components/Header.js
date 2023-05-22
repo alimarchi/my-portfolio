@@ -16,16 +16,23 @@ const Header = () => {
       <div className="mobile-header">
         <nav className="general-nav">
           <div>
-            <FontAwesomeIcon
-              icon={faLinkedin}
-              size="2x"
-              className="social-logo"
-            />
-            <FontAwesomeIcon
-              icon={faGithub}
-              size="2x"
-              className="social-logo"
-            />
+            <a
+              href="https://www.linkedin.com/in/alimarchi/"
+              className="header-link"
+            >
+              <FontAwesomeIcon
+                icon={faLinkedin}
+                size="2x"
+                className="social-logo"
+              />
+            </a>
+            <a href="https://github.com/alimarchi" className="header-link">
+              <FontAwesomeIcon
+                icon={faGithub}
+                size="2x"
+                className="social-logo"
+              />
+            </a>
           </div>
           {!menuVisible ? (
             <FontAwesomeIcon
@@ -47,19 +54,19 @@ const Header = () => {
           <div className="dropdown-menu">
             <ul>
               <li>
-                <a>Home</a>
+                <a href="#home">Home</a>
               </li>
               <li>
-                <a>Projects</a>
+                <a href="#projects">Projects</a>
               </li>
               <li>
-                <a>About Me</a>
+                <a href="#about">About Me</a>
               </li>
               <li>
-                <a>Skills</a>
+                <a href="#skills">Skills</a>
               </li>
               <li>
-                <a>Contact</a>
+                <a href="#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -68,34 +75,41 @@ const Header = () => {
       <div className="desktop-header container">
         <nav className="general-nav">
           <div>
-            <FontAwesomeIcon
-              icon={faLinkedin}
-              size="2x"
-              className="social-logo"
-            />
-            <FontAwesomeIcon
-              icon={faGithub}
-              size="2x"
-              className="social-logo"
-            />
+            <a
+              href="https://www.linkedin.com/in/alimarchi/"
+              className="header-link"
+            >
+              <FontAwesomeIcon
+                icon={faLinkedin}
+                size="2x"
+                className="social-logo"
+              />
+            </a>
+            <a href="https://github.com/alimarchi" className="header-link">
+              <FontAwesomeIcon
+                icon={faGithub}
+                size="2x"
+                className="social-logo"
+              />
+            </a>
           </div>
           <ul className="menu-links">
-              <li>
-                <a>Home</a>
-              </li>
-              <li>
-                <a>Projects</a>
-              </li>
-              <li>
-                <a>About Me</a>
-              </li>
-              <li>
-                <a>Skills</a>
-              </li>
-              <li>
-                <a>Contact</a>
-              </li>
-            </ul>
+            <li>
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <a href="#projects">Projects</a>
+            </li>
+            <li>
+              <a href="#about">About Me</a>
+            </li>
+            <li>
+              <a href="#skills">Skills</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
         </nav>
       </div>
     </header>

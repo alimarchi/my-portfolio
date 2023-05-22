@@ -1,4 +1,5 @@
 import "../style/Contact.css";
+import CV from "../assets/CV_Alice_Marchi.pdf";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faPaperPlane,
@@ -10,7 +11,7 @@ import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const Contact = () => {
   return (
-    <section className="main-section">
+    <section className="main-section" id="contact">
       <div className="container">
         <div className="section-header">
           <div className="divider"></div>
@@ -22,32 +23,46 @@ const Contact = () => {
             <div className="contact-card">
               <FontAwesomeIcon icon={faEnvelope} size="2x" />
               <h4>Email</h4>
-              <p>
-                Write me <FontAwesomeIcon icon={faArrowRight} />
-              </p>
+              <a href="mailto:marchi_alice@yahoo.com">
+                Write me{" "}
+                <FontAwesomeIcon
+                  icon={faArrowRight}
+                  className="click-arrow hvr-forward"
+                />
+              </a>
             </div>
             <div className="contact-card">
               <FontAwesomeIcon icon={faLinkedin} size="2x" />
               <h4>LinkedIn</h4>
-              <p>
-                alimarchi <FontAwesomeIcon icon={faArrowRight} />
-              </p>
+              <a href="https://www.linkedin.com/in/alimarchi/">
+                alimarchi{" "}
+                <FontAwesomeIcon
+                  icon={faArrowRight}
+                  className="click-arrow hvr-forward"
+                />
+              </a>
             </div>
             <div className="contact-card">
               <FontAwesomeIcon icon={faGithub} size="2x" />
               <h4>Github</h4>
-              <p>
-                alimarchi <FontAwesomeIcon icon={faArrowRight} />
-              </p>
+              <a href="https://github.com/alimarchi">
+                alimarchi{" "}
+                <FontAwesomeIcon
+                  icon={faArrowRight}
+                  className="click-arrow hvr-forward"
+                />
+              </a>
             </div>
             <div>
               <div>
                 <button className="contact-button">
-                  Download CV
-                  <FontAwesomeIcon
-                    icon={faFileLines}
-                    className="contact-logo"
-                  />
+                  <a download="CV_AliceMarchi.pdf" href={CV}>
+                    Download CV
+                    <FontAwesomeIcon
+                      icon={faFileLines}
+                      className="contact-logo"
+                    />
+                  </a>
                 </button>
               </div>
             </div>
