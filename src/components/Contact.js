@@ -1,5 +1,5 @@
-import { useRef } from "react";
-import emailjs from "@emailjs/browser";
+import { useRef, useState } from "react";
+import emailjs, { send } from "@emailjs/browser";
 import "../style/Contact.css";
 import CV from "../assets/CV_Alice_Marchi.pdf";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -13,26 +13,76 @@ import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const Contact = () => {
   const form = useRef();
+  const [nameError, setNameError] = useState("");
+  const [emailError, setEmailError] = useState("");
+  const [messageError, setMessageError] = useState("");
+
+  const [error, setError] = useState("");
+
+  const validateEmail = (email) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
+
+  const validateForm = () => {
+    const name = form.current.user_name.value.trim();
+    const email = form.current.user_email.value.trim();
+    const message = form.current.message.value.trim();
+
+    let valid = true;
+
+    if (name.length < 1) {
+      setNameError("Name is required.");
+      valid = false;
+    } else {
+      setNameError(false);
+    }
+
+    if (!validateEmail(email)) {
+      setEmailError("Invalid email address.");
+      valid = false;
+    } else {
+      setEmailError(false);
+    }
+
+    if (message.length < 5) {
+      setMessageError("Message must be at least 5 characters.");
+      valid = false;
+    } else {
+      setMessageError(false);
+    }
+
+    return valid;
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_92yq14w",
-        "template_bo0ipn1",
-        form.current,
-        "Iyl0-LSUsgu5Dy0sW"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          e.target.reset();
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    if (validateForm()) {
+      emailjs
+        .sendForm(
+          "service_92yq14w",
+          "template_bo0ipn1",
+          form.current,
+          "Iyl0-LSUsgu5Dy0sW"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            e.target.reset();
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+    } else {
+      console.log("error");
+    }
+  };
+
+  const prueba = (e) => {
+    e.preventDefault();
+    console.log(form.current.elements.user_name);
   };
 
   return (
@@ -44,7 +94,7 @@ const Contact = () => {
         </div>
         <div className="contact-container">
           <div className="contact-info">
-            <h3>Let's get in touch!</h3>
+            <h3 className="contact-title">Let's get in touch!</h3>
             <div className="contact-card">
               <FontAwesomeIcon icon={faEnvelope} size="2x" />
               <h4>Email</h4>
@@ -95,7 +145,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="contact-form">
-            <h3>Write me a message</h3>
+            <h3 className="contact-title">Write me a message</h3>
             <form ref={form} onSubmit={sendEmail}>
               <div className="input-container">
                 <label htmlFor="user_name">Name</label>
@@ -103,8 +153,9 @@ const Contact = () => {
                   type="text"
                   name="user_name"
                   placeholder="Your name"
-                  required
+                  className={nameError ? "invalid" : ""}
                 />
+                {nameError && <p className="error-message">{nameError}</p>}
               </div>
               <div className="input-container">
                 <label htmlFor="user_email">Email</label>
@@ -112,16 +163,20 @@ const Contact = () => {
                   type="text"
                   name="user_email"
                   placeholder="Your email"
-                  required
+                  className={emailError ? "invalid" : ""}
                 />
+                {emailError && <p className="error-message">{emailError}</p>}
               </div>
               <div className="input-container">
                 <label htmlFor="message">Message</label>
                 <textarea
                   name="message"
                   placeholder="Your message"
-                  required
+                  className={messageError ? "invalid" : ""}
                 ></textarea>
+                {messageError && (
+                  <p className="error-message">{messageError}</p>
+                )}
               </div>
               <div className="contact-button-container">
                 <button type="submit" className="contact-button">
