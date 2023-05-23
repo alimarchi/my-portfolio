@@ -42,7 +42,7 @@ function About() {
         <div className="about-main-container">
           <div className="about-photo-container">
             <div className="my-photo-container">
-              <img src={mypicture} />
+              <img src={mypicture} alt="Alice Marchi" />
             </div>
           </div>
           <div className="about-info-container">
@@ -88,13 +88,10 @@ function About() {
               condimentum massa ullamcorper id. Vestibulum vel nibh quis metus
               convallis blandit.
             </p>
-
-            <button className="cv-button">
-              <a download="CV_AliceMarchi.pdf" href={CV}>
+              <a  className="cv-button" download="CV_AliceMarchi.pdf" href={CV}>
                 Download CV
                 <FontAwesomeIcon icon={faFileLines} className="cv-logo" />
               </a>
-            </button>
           </div>
         </div>
         <div className="experience-title">

@@ -1,3 +1,5 @@
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import "../style/Contact.css";
 import CV from "../assets/CV_Alice_Marchi.pdf";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -10,6 +12,29 @@ import {
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_92yq14w",
+        "template_bo0ipn1",
+        form.current,
+        "Iyl0-LSUsgu5Dy0sW"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          e.target.reset();
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <section className="main-section" id="contact">
       <div className="container">
@@ -55,32 +80,48 @@ const Contact = () => {
             </div>
             <div>
               <div>
-                <button className="contact-button">
-                  <a download="CV_AliceMarchi.pdf" href={CV}>
-                    Download CV
-                    <FontAwesomeIcon
-                      icon={faFileLines}
-                      className="contact-logo"
-                    />
-                  </a>
-                </button>
+                <a
+                  className="contact-button"
+                  download="CV_AliceMarchi.pdf"
+                  href={CV}
+                >
+                  Download CV
+                  <FontAwesomeIcon
+                    icon={faFileLines}
+                    className="contact-logo"
+                  />
+                </a>
               </div>
             </div>
           </div>
           <div className="contact-form">
             <h3>Write me a message</h3>
-            <form>
+            <form ref={form} onSubmit={sendEmail}>
               <div className="input-container">
-                <label htmlFor="name">Name</label>
-                <input type="text" name="name" placeholder="Your name" />
+                <label htmlFor="user_name">Name</label>
+                <input
+                  type="text"
+                  name="user_name"
+                  placeholder="Your name"
+                  required
+                />
               </div>
               <div className="input-container">
-                <label htmlFor="email">Email</label>
-                <input type="text" name="email" placeholder="Your email" />
+                <label htmlFor="user_email">Email</label>
+                <input
+                  type="text"
+                  name="user_email"
+                  placeholder="Your email"
+                  required
+                />
               </div>
               <div className="input-container">
                 <label htmlFor="message">Message</label>
-                <textarea name="message" placeholder="Your message"></textarea>
+                <textarea
+                  name="message"
+                  placeholder="Your message"
+                  required
+                ></textarea>
               </div>
               <div className="contact-button-container">
                 <button type="submit" className="contact-button">

@@ -1,11 +1,24 @@
 .projects-container {
-    padding: 0 1em;
-    margin-top: 3em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    row-gap: 3em;
-    column-gap: 2em;
+  padding: 0 1em;
+  margin-top: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 3em;
+  column-gap: 2em;
+  animation: wipe-in-up 2s ease-in;
 }
 
+@keyframes wipe-in-up {
+  from {
+    clip-path: inset(100% 0 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+[transition-style="in:wipe:up"] {
+  animation: 2.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-up both;
+}

@@ -67,6 +67,7 @@
   font-weight: 600;
   border-radius: 1.3rem;
   margin-top: 2em;
+  display: inline-block;
 }
 
 .contact-button:hover {

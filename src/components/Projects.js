@@ -1,12 +1,12 @@
 import "../style/Projects.css";
-import projects from "../data/projects.json";
+import { projects } from "../data/projects";
 import Card from "./Card";
 
 const Projects = () => {
   return (
     <section className="main-section">
       <div className="container">
-        <div className="section-header"  id="projects">
+        <div className="section-header" id="projects">
           <div className="divider"></div>
           <h2 className="section-title">Projects</h2>
         </div>

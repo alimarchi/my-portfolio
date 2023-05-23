@@ -5,7 +5,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const Card = ({ project }) => {
   return (
-    <article className="project-card">
+    <article className="project-card hvr-float">
       <div className="img-container">
         <img src={project.img} alt="proyecto 1" />
       </div>
