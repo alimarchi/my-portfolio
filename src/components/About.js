@@ -13,6 +13,7 @@ import {
   faSquarePollVertical,
 } from "@fortawesome/free-solid-svg-icons";
 import Experience from "./Experience";
+import { Slide } from "react-awesome-reveal";
 
 function About() {
   const [educationOn, setEducationOn] = useState(true);
@@ -39,61 +40,63 @@ function About() {
           <div className="divider"></div>
           <h2 className="section-title">About Me</h2>
         </div>
-        <div className="about-main-container">
-          <div className="about-photo-container">
-            <div className="my-photo-container">
-              <img src={mypicture} alt="Alice Marchi" />
+        <Slide>
+          <div className="about-main-container">
+            <div className="about-photo-container">
+              <div className="my-photo-container">
+                <img src={mypicture} alt="Alice Marchi" />
+              </div>
             </div>
-          </div>
-          <div className="about-info-container">
-            <div>
-              <FontAwesomeIcon icon={faGlobe} size="2x" />
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-              efficitur convallis malesuada. Maecenas vitae pellentesque urna,
-              vel egestas justo. Nunc elementum tincidunt est eu sagittis. Donec
-              egestas ex in sapien posuere ornare. Mauris tempus, diam in
-              sollicitudin bibendum, tortor arcu efficitur nibh, nec
-              pellentesque massa urna ac dui. Nulla nec arcu at nunc finibus
-              varius et quis urna. Vivamus finibus dignissim magna, vitae
-              condimentum massa ullamcorper id. Vestibulum vel nibh quis metus
-              convallis blandit.
-            </p>
-            <div>
-              <FontAwesomeIcon icon={faSquarePollVertical} size="2x" />
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-              efficitur convallis malesuada. Maecenas vitae pellentesque urna,
-              vel egestas justo. Nunc elementum tincidunt est eu sagittis. Donec
-              egestas ex in sapien posuere ornare. Mauris tempus, diam in
-              sollicitudin bibendum, tortor arcu efficitur nibh, nec
-              pellentesque massa urna ac dui. Nulla nec arcu at nunc finibus
-              varius et quis urna. Vivamus finibus dignissim magna, vitae
-              condimentum massa ullamcorper id. Vestibulum vel nibh quis metus
-              convallis blandit.
-            </p>
-            <div>
-              <FontAwesomeIcon icon={faLaptopCode} size="2x" />
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-              efficitur convallis malesuada. Maecenas vitae pellentesque urna,
-              vel egestas justo. Nunc elementum tincidunt est eu sagittis. Donec
-              egestas ex in sapien posuere ornare. Mauris tempus, diam in
-              sollicitudin bibendum, tortor arcu efficitur nibh, nec
-              pellentesque massa urna ac dui. Nulla nec arcu at nunc finibus
-              varius et quis urna. Vivamus finibus dignissim magna, vitae
-              condimentum massa ullamcorper id. Vestibulum vel nibh quis metus
-              convallis blandit.
-            </p>
-              <a  className="cv-button" download="CV_AliceMarchi.pdf" href={CV}>
+            <div className="about-info-container">
+              <div>
+                <FontAwesomeIcon icon={faGlobe} size="2x" />
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                efficitur convallis malesuada. Maecenas vitae pellentesque urna,
+                vel egestas justo. Nunc elementum tincidunt est eu sagittis.
+                Donec egestas ex in sapien posuere ornare. Mauris tempus, diam
+                in sollicitudin bibendum, tortor arcu efficitur nibh, nec
+                pellentesque massa urna ac dui. Nulla nec arcu at nunc finibus
+                varius et quis urna. Vivamus finibus dignissim magna, vitae
+                condimentum massa ullamcorper id. Vestibulum vel nibh quis metus
+                convallis blandit.
+              </p>
+              <div>
+                <FontAwesomeIcon icon={faSquarePollVertical} size="2x" />
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                efficitur convallis malesuada. Maecenas vitae pellentesque urna,
+                vel egestas justo. Nunc elementum tincidunt est eu sagittis.
+                Donec egestas ex in sapien posuere ornare. Mauris tempus, diam
+                in sollicitudin bibendum, tortor arcu efficitur nibh, nec
+                pellentesque massa urna ac dui. Nulla nec arcu at nunc finibus
+                varius et quis urna. Vivamus finibus dignissim magna, vitae
+                condimentum massa ullamcorper id. Vestibulum vel nibh quis metus
+                convallis blandit.
+              </p>
+              <div>
+                <FontAwesomeIcon icon={faLaptopCode} size="2x" />
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                efficitur convallis malesuada. Maecenas vitae pellentesque urna,
+                vel egestas justo. Nunc elementum tincidunt est eu sagittis.
+                Donec egestas ex in sapien posuere ornare. Mauris tempus, diam
+                in sollicitudin bibendum, tortor arcu efficitur nibh, nec
+                pellentesque massa urna ac dui. Nulla nec arcu at nunc finibus
+                varius et quis urna. Vivamus finibus dignissim magna, vitae
+                condimentum massa ullamcorper id. Vestibulum vel nibh quis metus
+                convallis blandit.
+              </p>
+              <a className="cv-button" download="CV_AliceMarchi.pdf" href={CV}>
                 Download CV
                 <FontAwesomeIcon icon={faFileLines} className="cv-logo" />
               </a>
+            </div>
           </div>
-        </div>
+        </Slide>
         <div className="experience-title">
           <h4
             onClick={handleEducation}
