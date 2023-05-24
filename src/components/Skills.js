@@ -10,7 +10,7 @@ function Skills() {
           <h2 className="section-title">Skills</h2>
         </div>
         <div className="all-skills-container">
-          <Slide>
+          <Slide triggerOnce>
             <div className="skills-container">
               <h3>Languages</h3>
               <ul className="skills-items">
@@ -41,7 +41,7 @@ function Skills() {
               </ul>
             </div>
           </Slide>
-          <Slide>
+          <Slide triggerOnce>
             <div className="skills-container">
               <h3>Frameworks and Libraries</h3>
               <ul className="skills-items">
@@ -72,7 +72,7 @@ function Skills() {
               </ul>
             </div>
           </Slide>
-          <Slide>
+          <Slide triggerOnce>
             <div className="skills-container">
               <h3>Databases and Tools</h3>
               <ul className="skills-items">

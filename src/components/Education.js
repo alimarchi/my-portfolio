@@ -7,7 +7,7 @@ const Education = () => {
   return (
     <div className="timeline">
       <div className="timeline-data left-item">
-        <Fade>
+        <Fade triggerOnce>
           <div>
             <h4>Full Stack Web Development Bootcamp</h4>
             <p className="company-name">CodeSpace Academy</p>
@@ -33,7 +33,7 @@ const Education = () => {
           <span className="circle"></span>
           <span className="line"></span>
         </div>
-        <Fade>
+        <Fade triggerOnce>
           <div>
             <h4>Learn to program from scratch</h4>
             <p className="company-name">KeepCoding</p>
@@ -50,7 +50,7 @@ const Education = () => {
         </Fade>
       </div>
       <div className="timeline-data left-item">
-        <Fade>
+        <Fade triggerOnce>
           <div>
             <h4>Erasmus</h4>
             <p className="company-name">Kassel</p>
@@ -75,7 +75,7 @@ const Education = () => {
         <div>
           <span className="circle"></span>
         </div>
-        <Fade>
+        <Fade triggerOnce>
           <div>
             <h4>Language</h4>
             <p className="company-name">Catholic University</p>

@@ -11,7 +11,7 @@ const Projects = () => {
           <div className="divider"></div>
           <h2 className="section-title">Projects</h2>
         </div>
-        <Fade>
+        <Fade triggerOnce>
           <div className="projects-container">
             {projects.map((project) => {
               return <Card project={project} key={project.id} />;

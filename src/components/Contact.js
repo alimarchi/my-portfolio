@@ -11,8 +11,42 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { Fade } from "react-awesome-reveal";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
+  const notifySuccess = () => {
+    toast.success(
+      "Thank you! I've received your message and I'll get back to you asap 🚀",
+      {
+        position: "top-center",
+        autoClose: 8000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      }
+    );
+  };
+
+  const notifyError = () => {
+    toast.error(
+      "I'm sorry, an error occurred but you can send me an email! ✉️",
+      {
+        position: "top-center",
+        autoClose: 8000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      }
+    );
+  };
+
   const form = useRef();
   const [nameError, setNameError] = useState("");
   const [emailError, setEmailError] = useState("");
@@ -69,15 +103,13 @@ const Contact = () => {
         )
         .then(
           (result) => {
-            console.log(result.text);
             e.target.reset();
+            notifySuccess();
           },
           (error) => {
-            console.log(error.text);
+            notifyError();
           }
         );
-    } else {
-      console.log("error");
     }
   };
 
@@ -94,7 +126,7 @@ const Contact = () => {
           <h2 className="section-title">Contact</h2>
         </div>
         <div className="contact-container">
-          <Fade>
+          <Fade triggerOnce>
             <div className="contact-info">
               <h3 className="contact-title">Let's get in touch!</h3>
               <div className="contact-card">
@@ -147,7 +179,7 @@ const Contact = () => {
               </div>
             </div>
           </Fade>
-          <Fade>
+          <Fade triggerOnce>
             <div className="contact-form">
               <h3 className="contact-title">Write me a message</h3>
               <form ref={form} onSubmit={sendEmail}>
@@ -195,6 +227,7 @@ const Contact = () => {
             </div>
           </Fade>
         </div>
+        <ToastContainer />
       </div>
     </section>
   );

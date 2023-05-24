@@ -40,7 +40,7 @@ function About() {
           <div className="divider"></div>
           <h2 className="section-title">About Me</h2>
         </div>
-        <Slide>
+        <Slide triggerOnce>
           <div className="about-main-container">
             <div className="about-photo-container">
               <div className="my-photo-container">

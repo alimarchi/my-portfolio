@@ -7,7 +7,7 @@ const Experience = () => {
   return (
     <div className="timeline">
       <div className="timeline-data left-item">
-        <Fade>
+        <Fade triggerOnce>
           <div>
             <h4>Junior Full Stack Web Developer</h4>
             <p className="date">
@@ -32,7 +32,7 @@ const Experience = () => {
           <span className="circle"></span>
           <span className="line"></span>
         </div>
-        <Fade>
+        <Fade triggerOnce>
           <div>
             <h4>Big Data Consultant</h4>
             <p className="company-name">Bosonit</p>
@@ -49,7 +49,7 @@ const Experience = () => {
         </Fade>
       </div>
       <div className="timeline-data left-item">
-        <Fade>
+        <Fade triggerOnce>
           <div>
             <h4>Community Manager</h4>
             <p className="company-name">Maquillalia</p>
@@ -75,7 +75,7 @@ const Experience = () => {
           <span className="circle"></span>
           <span className="line"></span>
         </div>
-        <Fade>
+        <Fade triggerOnce>
           <div>
             <h4>Community Manager</h4>
             <p className="company-name">Belletica</p>
@@ -92,7 +92,7 @@ const Experience = () => {
         </Fade>
       </div>
       <div className="timeline-data left-item">
-        <Fade>
+        <Fade triggerOnce>
           <div>
             <h4>Marketing Assistant</h4>
             <p className="company-name">Società Dante Alighieri</p>

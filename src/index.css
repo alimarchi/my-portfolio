@@ -5,6 +5,17 @@
   --black: #212a3e;
   --white: #f5f5f5;
   --grey: #9ba4b5;
+  --toastify-text-color-success: red;
+  --toastify-text-color-light: red;
+  --toastify-color-success: yellow;
+}
+
+.Toastify__toast-theme--light.Toastify__toast--success,
+.Toastify__toast-theme--light.Toastify__toast--error {
+  background-color: var(--white);
+  color: var(--black);
+  text-align: center;
+  font-family: "Roboto", sans-serif;
 }
 
 *,
