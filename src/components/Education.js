@@ -15,10 +15,12 @@ const Education = () => {
               <FontAwesomeIcon icon={faCalendarDays} /> 2022-2023
             </p>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-              efficitur convallis malesuada. Maecenas vitae pellentesque urna,
-              vel egestas justo. Nunc elementum tincidunt est eu sagittis. Donec
-              egestas ex in sapien posuere ornare.
+              This bootcamp provided hands-on experience in creating dynamic
+              websites, managing front-end and back-end technologies, and
+              developing web applications that connect to databases through a
+              RESTful API. The practical approach, combined with individual and
+              team projects, deepened my understanding of web development and
+              honed my skills in a real-world setting.
             </p>
           </div>
         </Fade>
@@ -41,10 +43,11 @@ const Education = () => {
               <FontAwesomeIcon icon={faCalendarDays} /> 2022
             </p>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-              efficitur convallis malesuada. Maecenas vitae pellentesque urna,
-              vel egestas justo. Nunc elementum tincidunt est eu sagittis. Donec
-              egestas ex in sapien posuere ornare.
+              This course introduced me to the world of coding. I started from
+              the very beginning, learning a programming language from scratch,
+              Python. Through the course, I developed my computational and
+              logical thinking skills and gained a strong understanding of the
+              fundamental concepts in programming.
             </p>
           </div>
         </Fade>
@@ -58,10 +61,11 @@ const Education = () => {
               <FontAwesomeIcon icon={faCalendarDays} /> 2013-2014
             </p>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-              efficitur convallis malesuada. Maecenas vitae pellentesque urna,
-              vel egestas justo. Nunc elementum tincidunt est eu sagittis. Donec
-              egestas ex in sapien posuere ornare.
+              My Erasmus experience was a truly enriching opportunity that
+              allowed me to enhance my German language skills. More importantly,
+              however, it provided me with the chance to immerse myself in an
+              international environment, where I was able to gain a greater
+              understanding of different cultures and perspectives.
             </p>
           </div>
         </Fade>
@@ -83,10 +87,10 @@ const Education = () => {
               <FontAwesomeIcon icon={faCalendarDays} /> 2011-2015
             </p>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-              efficitur convallis malesuada. Maecenas vitae pellentesque urna,
-              vel egestas justo. Nunc elementum tincidunt est eu sagittis. Donec
-              egestas ex in sapien posuere ornare.
+              I focused my studies on mastering two foreign languages, English
+              and German. In addition to language proficiency, I also had the
+              opportunity to delve into the field of economics, studying
+              subjects such as marketing, business economics, and economic law.
             </p>
           </div>
         </Fade>

@@ -70,7 +70,7 @@ function About() {
                 Spanish e-commerce company, gaining valuable insights into
                 website functionality and enhancing the online user experience.
                 This experience sparked my interest in web development and
-                coding as a whole. I delved into studying Python and coding
+                coding as a whole. I delved into studying <strong>Python</strong> and coding
                 principles, eventually venturing into the dynamic world of IT,
                 specializing in big data analysis.
               </p>
@@ -82,7 +82,7 @@ function About() {
                 development, which had always captivated me. This field allows
                 me to channel my creativity and challenge my logical thinking. I
                 enrolled in a comprehensive full-stack web development bootcamp,
-                focusing on MERN development (MongoDB, Express, React, Node.js).
+                focusing on <strong>MERN development</strong> (MongoDB, Express, React, Node.js).
                 Through personal projects, I honed my skills and gained
                 practical experience. I remain open to learning new frameworks
                 and languages, constantly expanding my repertoire. I am actively

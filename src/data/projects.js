@@ -29,7 +29,7 @@ export const projects = [
     tech: " React - JavaScript - CSS",
     img: weatherAppImg,
     repoURL: "https://github.com/alimarchi/react-weather-app",
-    webURL: "#",
+    webURL: "https://alimarchi.github.io/react-weather-app/",
   },
   {
     id: 4,
@@ -39,14 +39,5 @@ export const projects = [
     img: watchlistImg,
     repoURL: "https://github.com/alimarchi/movies-watchlist",
     webURL: "#",
-  }
-  // {
-  //   id: 5,
-  //   name: "myCRYPTO",
-  //   type: "Personal project",
-  //   tech: "Python - Flask - HTML5",
-  //   img: "https://randomwordgenerator.com/img/picture-generator/pocket-watch-3156771_640.jpg",
-  //   repoURL: "https://github.com/alimarchi/myCRYPTO",
-  //   webURL: "#",
-  // },
+  },
 ];
