@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+# My Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+This repository contains the code for my personal website, which I developed using React and JavaScript. The website is a reflection of my identity and showcases both my skills and projects. It serves as a portfolio where you can explore the projects I have worked on and will continue to update with new additions. If you have any questions or suggestions, please don't hesitate to get in touch!
 
-In the project directory, you can run:
+#### Features
+- **Minimal Design**: The website features a minimalistic design with subtle hints of color, reflecting my personal taste.
+- **Fully Responsive**: The website is fully responsive and adjusts seamlessly to different screen sizes and devices.
+- **Scroll Animations**: When you scroll the page for the first time, you'll notice smooth animations on various elements. These animations are implemented using the React Awesome Reveal library.
+- **Dynamic Project Display**: The projects showcased in the main section of the website are imported from a JavaScript file. By simply adding a project to the array in the file, it will be automatically rendered on the portfolio page.
+- **Downloadable CV**: The About and Contact sections include a button that allows users to download my CV in PDF format directly.
+- **Visual Skills Representation**: I've represented my main skills visually using logos with the help of the devicon library, which is installed as a dependency.
+- **Scroll-to-Top Button**: As you start scrolling the page, an arrow appears at the bottom of the viewport. By clicking on it, you can quickly scroll back to the top of the page.
+- **Timeline Representation**: To provide a more visual and easy-to-read approach, I've created a simple timeline to showcase my education and experience. The timeline includes two buttons, "Education" and "Experience," allowing users to toggle between the two.
+- **Smooth Navigation**: The website features a navbar that allows users to easily navigate to different sections of the page with smooth scrolling behavior. Additionally, you can find logos in the navbar that link to my LinkedIn and GitHub profiles.
+- **Contact Options**: In the Contact section, users can find links to my GitHub and LinkedIn profiles. Alternatively, they can click on the "Write Me" button, which automatically opens an email window to directly send me an email.
+- **Message Form with Validation**: The Contact section includes a form that enables users to send me a message. The form includes validation to ensure that all fields are filled, with all fields being required. The message must be at least 5 characters long, and the email must be a valid one, verified using regex. Messages are sent directly to my email address using the EmailJS library, which supports email services using client-side technologies only.
+- **Notifications**: Users will receive notifications using the React Toastify library, informing them if the message is sent successfully or if any errors occur during the process.
 
-### `npm start`
+#### Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React
+- HTML / pure CSS
+- JavaScript
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### Libraries and Dependencies
 
-### `npm test`
+- [Font Awesome](https://fontawesome.com/v5/docs/web/use-with/react)
+- [EmailJS](https://www.emailjs.com/)
+- [Devicon](https://devicon.dev/)
+- [React Awesome Reveal](https://react-awesome-reveal.morello.dev/)
+- [React Toastify](https://fkhadra.github.io/react-toastify/introduction)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

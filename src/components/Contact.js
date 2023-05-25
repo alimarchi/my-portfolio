@@ -96,10 +96,10 @@ const Contact = () => {
     if (validateForm()) {
       emailjs
         .sendForm(
-          "service_92yq14w",
-          "template_bo0ipn1",
+          process.env.REACT_APP_SERVICE_ID,
+          process.env.REACT_APP_TEMPLATED_ID,
           form.current,
-          "Iyl0-LSUsgu5Dy0sW"
+          process.env.REACT_APP_PUBLIC_KEY
         )
         .then(
           (result) => {
@@ -111,11 +111,6 @@ const Contact = () => {
           }
         );
     }
-  };
-
-  const prueba = (e) => {
-    e.preventDefault();
-    console.log(form.current.elements.user_name);
   };
 
   return (
