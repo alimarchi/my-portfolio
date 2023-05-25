@@ -10,14 +10,6 @@
   --toastify-color-success: yellow;
 }
 
-.Toastify__toast-theme--light.Toastify__toast--success,
-.Toastify__toast-theme--light.Toastify__toast--error {
-  background-color: var(--white);
-  color: var(--black);
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-}
-
 *,
 ::after,
 ::before {
@@ -92,6 +84,16 @@ button {
   outline: none;
 }
 
+/* style for toastify notifications */
+
+.Toastify__toast-theme--light.Toastify__toast--success,
+.Toastify__toast-theme--light.Toastify__toast--error {
+  background-color: var(--white);
+  color: var(--black);
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
 /* general classes */
 
 .container {
@@ -119,18 +121,3 @@ button {
   margin-top: 0.5em;
 }
 
-/* Tablet devices */
-@media (min-width: 576px) {
-}
-/* Laptop devices */
-@media (min-width: 768px) {
-}
-/* Desktop */
-@media (min-width: 992px) {
-}
-/* Large devices */
-@media (min-width: 1200px) {
-}
-/* XXL devices */
-@media (min-width: 1400px) {
-}

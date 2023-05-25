@@ -1,7 +1,7 @@
 import "../style/Skills.css";
 import { Slide } from "react-awesome-reveal";
 
-function Skills() {
+const Skills = () => {
   return (
     <section className="main-section" id="skills">
       <div className="container">

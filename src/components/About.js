@@ -52,43 +52,43 @@ function About() {
                 <FontAwesomeIcon icon={faGlobe} size="2x" />
               </div>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-                efficitur convallis malesuada. Maecenas vitae pellentesque urna,
-                vel egestas justo. Nunc elementum tincidunt est eu sagittis.
-                Donec egestas ex in sapien posuere ornare. Mauris tempus, diam
-                in sollicitudin bibendum, tortor arcu efficitur nibh, nec
-                pellentesque massa urna ac dui. Nulla nec arcu at nunc finibus
-                varius et quis urna. Vivamus finibus dignissim magna, vitae
-                condimentum massa ullamcorper id. Vestibulum vel nibh quis metus
-                convallis blandit.
+                Hi, I'm Alice, an Italian web developer currently based in
+                Malaga, Spain. I consider myself a multipotentialite, embracing
+                a flexible, organized, and curious approach to life. I have a
+                passion for learning, acquiring new skills, and exploring
+                diverse cultures, which helps me broaden my horizons. That's why
+                I pursued foreign language studies at the university, where I
+                focused on English and German with a business-oriented
+                perspective.
               </p>
               <div>
                 <FontAwesomeIcon icon={faSquarePollVertical} size="2x" />
               </div>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-                efficitur convallis malesuada. Maecenas vitae pellentesque urna,
-                vel egestas justo. Nunc elementum tincidunt est eu sagittis.
-                Donec egestas ex in sapien posuere ornare. Mauris tempus, diam
-                in sollicitudin bibendum, tortor arcu efficitur nibh, nec
-                pellentesque massa urna ac dui. Nulla nec arcu at nunc finibus
-                varius et quis urna. Vivamus finibus dignissim magna, vitae
-                condimentum massa ullamcorper id. Vestibulum vel nibh quis metus
-                convallis blandit.
+                After completing my degree, I embarked on a journey in the
+                digital marketing field. For several years, I worked for a
+                Spanish e-commerce company, gaining valuable insights into
+                website functionality and enhancing the online user experience.
+                This experience sparked my interest in web development and
+                coding as a whole. I delved into studying Python and coding
+                principles, eventually venturing into the dynamic world of IT,
+                specializing in big data analysis.
               </p>
               <div>
                 <FontAwesomeIcon icon={faLaptopCode} size="2x" />
               </div>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-                efficitur convallis malesuada. Maecenas vitae pellentesque urna,
-                vel egestas justo. Nunc elementum tincidunt est eu sagittis.
-                Donec egestas ex in sapien posuere ornare. Mauris tempus, diam
-                in sollicitudin bibendum, tortor arcu efficitur nibh, nec
-                pellentesque massa urna ac dui. Nulla nec arcu at nunc finibus
-                varius et quis urna. Vivamus finibus dignissim magna, vitae
-                condimentum massa ullamcorper id. Vestibulum vel nibh quis metus
-                convallis blandit.
+                Driven by my passion, I decided to transition to web
+                development, which had always captivated me. This field allows
+                me to channel my creativity and challenge my logical thinking. I
+                enrolled in a comprehensive full-stack web development bootcamp,
+                focusing on MERN development (MongoDB, Express, React, Node.js).
+                Through personal projects, I honed my skills and gained
+                practical experience. I remain open to learning new frameworks
+                and languages, constantly expanding my repertoire. I am actively
+                seeking opportunities with a company that values continued
+                learning and growth, where I can contribute my expertise and
+                knowledge as a web developer.
               </p>
               <a className="cv-button" download="CV_AliceMarchi.pdf" href={CV}>
                 Download CV

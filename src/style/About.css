@@ -1,33 +1,4 @@
-.experience-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2em;
-  margin-bottom: 3em;
-}
-
-.experience-title h4:first-of-type {
-  margin-right: 1.5em;
-}
-
-.experience-title h4 {
-  cursor: pointer;
-  border: 1px solid var(--black);
-  padding: 0.5em 1.2em;
-  border-radius: 1.3rem;
-}
-
-.experience-title h4:not(.selected):hover {
-  color: var(--purple);
-  border: 1px solid var(--purple);
-  background-color: var(--white);
-}
-
-.selected {
-  color: var(--white);
-  background-color: var(--black);
-  cursor: default !important;
-}
+/* purple about container */
 
 .about-main-container {
   background-color: var(--purple);
@@ -85,6 +56,39 @@
 
 .cv-logo {
   margin-left: 0.5em;
+}
+
+/* experience and education timeline */
+
+.experience-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+  margin-bottom: 3em;
+}
+
+.experience-title h4:first-of-type {
+  margin-right: 1.5em;
+}
+
+.experience-title h4 {
+  cursor: pointer;
+  border: 1px solid var(--black);
+  padding: 0.5em 1.2em;
+  border-radius: 1.3rem;
+}
+
+.experience-title h4:not(.selected):hover {
+  color: var(--purple);
+  border: 1px solid var(--purple);
+  background-color: var(--white);
+}
+
+.selected {
+  color: var(--white);
+  background-color: var(--black);
+  cursor: default !important;
 }
 
 /* Tablet devices */

@@ -110,10 +110,6 @@ header {
   }
 }
 
-/* Tablet devices */
-@media (min-width: 576px) {
-}
-
 /* Laptop devices */
 @media (min-width: 768px) {
   .mobile-header {
@@ -123,14 +119,4 @@ header {
   .desktop-header {
     display: block;
   }
-}
-/* Desktop */
-@media (min-width: 992px) {
-}
-/* Large devices */
-@media (min-width: 1200px) {
-}
-
-/* XXL devices */
-@media (min-width: 1400px) {
 }

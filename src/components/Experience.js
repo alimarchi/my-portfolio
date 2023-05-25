@@ -35,7 +35,7 @@ const Experience = () => {
         <Fade triggerOnce>
           <div>
             <h4>Big Data Consultant</h4>
-            <p className="company-name">Bosonit</p>
+            <p className="company-name">Bosonit (Spain)</p>
             <p className="date">
               <FontAwesomeIcon icon={faCalendarDays} /> 2022
             </p>
@@ -52,9 +52,9 @@ const Experience = () => {
         <Fade triggerOnce>
           <div>
             <h4>Community Manager</h4>
-            <p className="company-name">Maquillalia</p>
+            <p className="company-name">Maquillalia (Spain)</p>
             <p className="date">
-              <FontAwesomeIcon icon={faCalendarDays} /> 2022-2023
+              <FontAwesomeIcon icon={faCalendarDays} /> 2018-2022
             </p>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
@@ -78,9 +78,9 @@ const Experience = () => {
         <Fade triggerOnce>
           <div>
             <h4>Community Manager</h4>
-            <p className="company-name">Belletica</p>
+            <p className="company-name">Belletica (Spain)</p>
             <p className="date">
-              <FontAwesomeIcon icon={faCalendarDays} /> 2022-2023
+              <FontAwesomeIcon icon={faCalendarDays} /> 2017-2018
             </p>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
@@ -94,10 +94,10 @@ const Experience = () => {
       <div className="timeline-data left-item">
         <Fade triggerOnce>
           <div>
-            <h4>Marketing Assistant</h4>
-            <p className="company-name">Società Dante Alighieri</p>
+            <h4>Marketing Intern</h4>
+            <p className="company-name">Società Dante Alighieri (Germany)</p>
             <p className="date">
-              <FontAwesomeIcon icon={faCalendarDays} /> 2022-2023
+              <FontAwesomeIcon icon={faCalendarDays} /> 2016
             </p>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin

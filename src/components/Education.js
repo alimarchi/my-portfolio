@@ -10,7 +10,7 @@ const Education = () => {
         <Fade triggerOnce>
           <div>
             <h4>Full Stack Web Development Bootcamp</h4>
-            <p className="company-name">CodeSpace Academy</p>
+            <p className="company-name">CodeSpace Academy (Spain)</p>
             <p className="date">
               <FontAwesomeIcon icon={faCalendarDays} /> 2022-2023
             </p>
@@ -35,10 +35,10 @@ const Education = () => {
         </div>
         <Fade triggerOnce>
           <div>
-            <h4>Learn to program from scratch</h4>
-            <p className="company-name">KeepCoding</p>
+            <h4>Learn to Program from Scratch with Python</h4>
+            <p className="company-name">KeepCoding Tech School (Spain)</p>
             <p className="date">
-              <FontAwesomeIcon icon={faCalendarDays} /> 2022-2023
+              <FontAwesomeIcon icon={faCalendarDays} /> 2022
             </p>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
@@ -52,10 +52,10 @@ const Education = () => {
       <div className="timeline-data left-item">
         <Fade triggerOnce>
           <div>
-            <h4>Erasmus</h4>
-            <p className="company-name">Kassel</p>
+            <h4>Erasmus Program</h4>
+            <p className="company-name">Univeristy of Kassel (Germany)</p>
             <p className="date">
-              <FontAwesomeIcon icon={faCalendarDays} /> 2022-2023
+              <FontAwesomeIcon icon={faCalendarDays} /> 2013-2014
             </p>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
@@ -77,10 +77,10 @@ const Education = () => {
         </div>
         <Fade triggerOnce>
           <div>
-            <h4>Language</h4>
-            <p className="company-name">Catholic University</p>
+            <h4>First Level Degree in Linguistic Sciences</h4>
+            <p className="company-name">Catholic University (Italy)</p>
             <p className="date">
-              <FontAwesomeIcon icon={faCalendarDays} /> 2022-2023
+              <FontAwesomeIcon icon={faCalendarDays} /> 2011-2015
             </p>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
