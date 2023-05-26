@@ -11,7 +11,7 @@ export const projects = [
     tech: " React - JavaScript - CSS",
     img: wordleImg,
     repoURL: "https://github.com/alimarchi/wordle",
-    webURL: "#",
+    webURL: "https://alimarchi.github.io/wordle/",
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ export const projects = [
     tech: " React - JavaScript - CSS",
     img: shoppingCartImg,
     repoURL: "https://github.com/alimarchi/shopping-cart",
-    webURL: "#",
+    webURL: "https://alimarchi.github.io/shopping-cart/",
   },
   {
     id: 3,
