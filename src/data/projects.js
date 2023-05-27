@@ -38,6 +38,6 @@ export const projects = [
     tech: " React - JavaScript - CSS",
     img: watchlistImg,
     repoURL: "https://github.com/alimarchi/movies-watchlist",
-    webURL: "#",
+    webURL: "https://alimarchi.github.io/movies-watchlist/",
   },
 ];

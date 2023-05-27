@@ -14,10 +14,10 @@ const Card = ({ project }) => {
         <p>{project.tech}</p>
       </div>
       <div className="project-logos">
-        <a href={project.repoURL}>
+        <a href={project.repoURL} target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faGithub} size="xl" className="project-logo" />
         </a>
-        <a href={project.webURL}>
+        <a href={project.webURL} target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon
             icon={faDesktop}
             size="xl"
