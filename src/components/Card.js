@@ -7,7 +7,9 @@ const Card = ({ project }) => {
   return (
     <article className="project-card hvr-float">
       <div className="img-container">
-        <img src={project.img} alt="proyecto 1" />
+        <a href={project.webURL} target="_blank" rel="noopener noreferrer">
+          <img src={project.img} alt="proyecto 1" />
+        </a>
       </div>
       <div className="project-info">
         <h4 className="project-title">{project.name}</h4>

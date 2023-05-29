@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import emailjs, { send } from "@emailjs/browser";
+import emailjs from "@emailjs/browser";
 import "../style/Contact.css";
 import CV from "../assets/CV_Alice_Marchi.pdf";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -51,8 +51,6 @@ const Contact = () => {
   const [nameError, setNameError] = useState("");
   const [emailError, setEmailError] = useState("");
   const [messageError, setMessageError] = useState("");
-
-  const [error, setError] = useState("");
 
   const validateEmail = (email) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -138,7 +136,11 @@ const Contact = () => {
               <div className="contact-card">
                 <FontAwesomeIcon icon={faLinkedin} size="2x" />
                 <h4>LinkedIn</h4>
-                <a href="https://www.linkedin.com/in/alimarchi/">
+                <a
+                  href="https://www.linkedin.com/in/alimarchi/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   alimarchi{" "}
                   <FontAwesomeIcon
                     icon={faArrowRight}
@@ -149,7 +151,11 @@ const Contact = () => {
               <div className="contact-card">
                 <FontAwesomeIcon icon={faGithub} size="2x" />
                 <h4>Github</h4>
-                <a href="https://github.com/alimarchi">
+                <a
+                  href="https://github.com/alimarchi"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   alimarchi{" "}
                   <FontAwesomeIcon
                     icon={faArrowRight}
