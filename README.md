@@ -4,6 +4,8 @@
 
 This repository contains the code for my personal website, which I developed using React and JavaScript. The website is a reflection of my identity and showcases both my skills and projects. It serves as a portfolio where you can explore the projects I have worked on and will continue to update with new additions. If you have any questions or suggestions, please don't hesitate to get in touch!
 
+Check out my portfolio [here](https://alicemarchi.netlify.app/)!
+
 #### Features
 - **Minimal Design**: The website features a minimalistic design with subtle hints of color, reflecting my personal taste.
 - **Fully Responsive**: The website is fully responsive and adjusts seamlessly to different screen sizes and devices.
