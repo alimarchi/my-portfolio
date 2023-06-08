@@ -19,13 +19,15 @@ const Card = ({ project }) => {
         <a href={project.repoURL} target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faGithub} size="xl" className="project-logo" />
         </a>
-        <a href={project.webURL} target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon
-            icon={faDesktop}
-            size="xl"
-            className="project-logo"
-          />
-        </a>
+        {project.webURL && (
+          <a href={project.webURL} target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon
+              icon={faDesktop}
+              size="xl"
+              className="project-logo"
+            />
+          </a>
+        )}
       </div>
     </article>
   );

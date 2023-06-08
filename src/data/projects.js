@@ -48,6 +48,6 @@ export const projects = [
     tech: "Typescript - React - Node.js",
     img: notesImg,
     repoURL: "https://github.com/alimarchi/notes-app",
-    webURL: "https://github.com/alimarchi/notes-app",
+    webURL: "",
   },
 ];
