@@ -7,7 +7,11 @@ const Card = ({ project }) => {
   return (
     <article className="project-card hvr-float">
       <div className="img-container">
-        <a href={project.webURL} target="_blank" rel="noopener noreferrer">
+        <a
+          href={project.webURL ? project.webURL : project.repoURL}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img src={project.img} alt="proyecto 1" />
         </a>
       </div>
