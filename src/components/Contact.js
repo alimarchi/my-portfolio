@@ -94,8 +94,8 @@ const Contact = () => {
     if (validateForm()) {
       emailjs
         .sendForm(
-          process.env.REACT_APP_SERVICE_ID,
-          process.env.REACT_APP_TEMPLATED_ID,
+          "service_92yq14w",
+          "template_bo0ipn1",
           form.current,
           "Iyl0-LSUsgu5Dy0sW"
         )
