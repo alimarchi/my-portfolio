@@ -97,7 +97,7 @@ const Contact = () => {
           process.env.REACT_APP_SERVICE_ID,
           process.env.REACT_APP_TEMPLATED_ID,
           form.current,
-          process.env.REACT_APP_PUBLIC_KEY
+          "Iyl0-LSUsgu5Dy0sW"
         )
         .then(
           (result) => {
